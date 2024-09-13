@@ -1,0 +1,16 @@
+a=12
+print(type(a))
+a=12.5
+print(type(a))
+a=10e4
+print(type(a),a)
+a=[12]
+print(type(a))
+a=(12,)
+print(type(a))
+a=(12)
+print(type(a))
+a=set()
+print(type(a))
+a={'{}':1}
+print(type(a))

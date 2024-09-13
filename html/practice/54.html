@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    this is body
+
+    <script>
+        let age = null;
+        let name = prompt("Enter your age.");
+        let a = false;
+        if (name < 18) {
+            alert("you are just a kid. you can't go in club.");
+        }
+        else {
+            age = prompt("Enter you dummy name for club..");
+        }
+
+        console.log(age)
+        if (age.length < 1) {
+            alert("invalid name");
+        }    
+        else {
+            a = confirm(`press ok go in club , press cancel to exit`);
+        }
+
+        if(a==true){
+            alert(`you are in club`);
+        }
+        else{
+            alert(`you are not in club.`);
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

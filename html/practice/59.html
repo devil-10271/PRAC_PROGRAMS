@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: inline-block;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgb(180, 13, 46);
+            color: aliceblue;
+            font-size: 20px;
+        }
+        #date{
+            display: inline-block;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgb(180, 13, 46);
+            color: aliceblue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        hello world at
+    </div>
+    <div id="date">
+
+    </div>
+
+    <script>
+        let dt=new Date();
+        console.log(dt);
+
+        setInterval(now,10);
+        
+        function now(){
+            let a=document.getElementById(`date`).innerHTML=new Date();
+
+        }
+
+
+    </script>
+</body>
+</html>

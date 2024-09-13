@@ -1,0 +1,1 @@
+print(sec_main.pri())

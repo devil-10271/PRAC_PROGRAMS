@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .cont {
+            background-color: black;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: aqua;
+            border: 2px solid red;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.1s;
+        }
+
+        .box:hover {
+            /* transform: rotate(90deg); */
+            transform: translate(10px,10px);
+        }
+
+        .id {
+            position: sticky;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box">
+            <div class="id">
+                hi
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

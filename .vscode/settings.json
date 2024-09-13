@@ -1,0 +1,9 @@
+{
+    "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+    "cmake.sourceDirectory": "D:/programs/flutter/app111/linux",
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "stdio.h": "c"
+    }
+}

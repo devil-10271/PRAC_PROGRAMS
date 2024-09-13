@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js tut</title>
+    <style>
+        .container {
+            color: white;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li class="navitems">Home</li>
+            <li class="navitems">About Us</li>
+            <li class="navitems">Contact Us</li>
+            <li class="navitems">More</li>
+            <li class="navitems">hi</li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        hello world
+    </div>
+
+    <script>
+        let a = document.getElementById(`nav`);
+        console.log(a);
+        // a[0].innerHTML=`<li> sahil</li>`; not valid
+
+        let c = document.getElementsByClassName(`navitems`);
+        console.log(c);
+        c[0].innerHTML=`hello world`;
+
+        let b = document.querySelector('.container');
+        console.log(b);
+
+        let f = document.querySelectorAll(`.container`);
+        console.log(f);
+
+        f[0].innerHTML=`hello world`;
+
+    </script>
+
+</body>
+
+</html>

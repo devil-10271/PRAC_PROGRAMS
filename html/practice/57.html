@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js tut</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: cursive;
+        }
+
+        .container {
+            color: white;
+            /* background:#000000; */
+        }
+
+        .heading {
+            color: red;
+        }
+
+        .btn {
+            padding: 10px;
+            background-color: red;
+            font-family: cursive;
+            /* border: none; */
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .para {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">
+            This id para
+        </h1>
+        <p id="para">
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Voluptatem necessitatibus ipsum nisi illo quibusdam
+            exercitationem est voluptates aut dolor ab, rem praesentium hic possimus odit magnam, beatae in commodi
+            officiis molestias, quis animi omnis fuga. Ducimus quod asperiores repellendus! Quibusdam error repudiandae
+            provident autem qui fuga excepturi voluptatum dolorem ullam, expedita id explicabo impedit quidem voluptatem
+            esse cum, sint animi adipisci eius similique ipsum rem ipsam possimus. Ratione exercitationem odio iste,
+            quisquam eos velit cumque quae rerum explicabo, quam atque laboriosam est amet libero aliquam. Blanditiis,
+            placeat. Corrupti distinctio quod aliquid nihil rerum facilis dolore. Dolore at similique sint ratione
+            aperiam alias nisi aspernatur facilis suscipit consequatur ullam sunt eos doloribus accusamus commodi
+            accusantium atque hic architecto minus, amet delectus excepturi. Sed mollitia consequatur dicta dolor, sit
+            amet illum numquam eaque fugiat, minus laboriosam suscipit obcaecati. Unde debitis sunt architecto. Labore
+            sint eveniet illo explicabo corrupti eos assumenda fugit mollitia. Omnis accusamus veniam velit amet
+            suscipit error repudiandae ducimus qui minima ipsum fugit commodi iure architecto, magnam perferendis
+            possimus autem esse blanditiis unde iste. Aut aliquid cum veritatis fugiat veniam aperiam vitae nihil
+            exercitationem labore debitis voluptatem enim nulla consequatur autem nemo, nobis laudantium repudiandae
+            alias facere porro architecto vel.
+        </p>
+    </div>
+    <button class="btn" onclick="hide()">toogle hide</button>
+</body>
+<script>
+    let para = document.getElementById('para');
+    para.addEventListener('mouseover', function tun() {
+        console.log('inside the para');
+    })
+
+    para.addEventListener('mouseout', function run() {
+        console.log('outside the para')
+    })
+
+    function hide() {
+        let btn = document.getElementsByClassName(`btn`);
+        let para = document.getElementById(`para`);
+        if (para.style.display == 'block' || para.style.color == 'black') {
+            // para.style.display = 'none';
+            para.style.color = 'white';
+        }
+        else {
+            // para.style.display=`block`;
+            para.style.color = 'black';
+        }
+    }
+</script>
+
+</html>

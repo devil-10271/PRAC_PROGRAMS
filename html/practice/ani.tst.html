@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #FFF;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            background-color: #3f3f3f;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            margin: 10px;
+            /* padding: 10px; */
+        }
+
+        
+        #box1 {
+            position:relative;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+            width: 250px;
+            height: 250px;
+            animation-name: red1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            /* margin: 50px; */
+        }
+
+        #box2 {
+            position:relative;
+            top: 10px;
+            left: 270px;
+            background-color: green;
+            width: 250px;
+            height: 250px;
+        }
+
+        #box3 {
+            position:relative;
+            top: 270px;
+            left: 10px;
+            background-color: yellow;
+            width: 250px;
+            height: 250px;
+            /* margin: 50px; */
+        }
+
+        #box4 {
+            position: relative;
+            top: 270px;
+            left: 270px;
+            background-color: blue;
+            width: 250px;
+            height: 250px;
+        }
+
+        @keyframes red1 {
+            0%{
+                width: 250px;
+            }
+            100%{
+                width: 510;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1">red</div>
+        <div id="box2">green</div>
+        <div id="box3">yellow</div>
+        <div id="box4">blue</div>
+
+    </div>
+</body>
+
+</html>

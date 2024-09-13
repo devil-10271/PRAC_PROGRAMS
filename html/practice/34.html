@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadows</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .container {
+            margin: 25px;
+            padding: 10px;
+            border: 2px solid crimson;
+            width: 250px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #box-1 {
+            box-shadow: 5px 5px rgb(207, 82, 107);
+        }
+
+        #box-2 {
+            box-shadow: -5px -5px rgb(207, 82, 107);
+        }
+
+        #box-3 {
+            box-shadow: 5px 5px 10px 5px rgb(207, 82, 107);
+        }
+
+        #box-4 {
+            box-shadow: -5px -5px 10px 5px rgb(207, 82, 107);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container" id="box-1">FIRST</div>
+        <div class="container" id="box-2">SECOND</div>
+        <div class="container" id="box-3">THIRD</div>
+        <div class="container" id="box-4">FOURTH</div>
+    </div>
+</body>
+
+</html>

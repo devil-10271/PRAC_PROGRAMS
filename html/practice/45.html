@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website for diffrent media </title>
+
+    <style>
+        .body {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        div {
+            border: 2px solid white;
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            border: 3px solid black;
+            padding: 20px;
+            /* align-items: center;   +++++++ */
+            grid-template-areas:
+                'nav nav nav nav nav'
+                'con con con con asi'
+                'foo foo foo foo foo'
+            ;
+
+        }
+
+        .navbar {
+            grid-area: nav;
+        }
+
+        .content {
+            grid-area: con;
+        }
+
+        .aside {
+            grid-area: asi;
+        }
+
+        .footer {
+            grid-area: foo;
+        }
+
+        @media only screen and (max-width:320px) {
+            body {
+                background-color: rgb(45, 45, 45);
+
+            }
+            .container{
+                grid-template-areas:
+                    'nav nav nav nav nav'
+                    'con con con con con'
+                    'foo foo foo foo foo'
+                ;
+            }
+
+            .aside {
+                display: none;
+         
+            }
+        }
+
+        @media only screen and (min-width:321px) and (max-width:425px) {
+            body {
+                background-color: red;
+
+            }
+        }
+
+        @media only screen and (min-width:426px) and (max-width:768px) {
+            body {
+                background-color: crimson;
+
+            }
+        }
+
+        @media only screen and (min-width:769px) and (max-width:1024px) {
+            body {
+                background-color: palevioletred;
+
+            }
+        }
+
+        @media only screen and (min-width:1025px) {
+            body {
+                background-color: pink;
+
+            }
+        }
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <span>Home</span><span>services</span><span>contact us</span><span>meet me</span>
+        </div>
+
+        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. A error labore, expedita
+            dignissimos sed perferendis eum reprehenderit natus, quae repellat sit, iste tenetur! Fugit, ea velit? Non
+            veritatis dolorem quidem, dolore debitis provident alias repellendus mollitia excepturi id sapiente
+            inventore?</div>
+        <div class="aside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia optio nisi cum iste obcaecati harum omnis
+            dolor quas ipsa provident!
+        </div>
+
+        <div class="footer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, enim?</div>
+    </div>
+
+
+</body>
+
+</html>

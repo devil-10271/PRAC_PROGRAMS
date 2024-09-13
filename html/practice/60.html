@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        this is my container
+    </div>
+
+    <script>
+        // function a() {
+        //     console.log("Hello World");
+        // }
+        // setTimeout(a, 1000);
+
+        let ab = () => {
+            console.log("hello india");
+        }
+
+        let baa = (a = 0, b = 0, c = 0) => console.log(a + b + c);
+
+        baa();
+        ab();
+
+
+
+        let obje = {
+            name: ["sahil", "xinal"],
+            printf() {
+                this.name.forEach(i => {
+                    console.log(i);
+                });
+            }
+        }
+
+        obje.printf();
+
+    </script>
+
+</body>
+
+</html>

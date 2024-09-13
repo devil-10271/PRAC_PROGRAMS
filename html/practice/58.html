@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js tut</title>
+</head>
+
+<body>
+    <div class="container">
+        hello world
+        <hr>
+        time is<hr>
+        <hr>
+        <div id="tino"></div>
+    </div>
+
+    <script>
+        function welcome(name) {
+            console.log(`Hello`, name);
+        }
+        let a = setTimeout(welcome, 1000, 'world');
+
+        clearTimeout(a);
+        console.log(`jelly`);
+
+        function date1() {
+            let b = new Date();
+            // console.log(b);
+            document.getElementById(`tino`).innerHTML=b; 
+        }
+
+        setInterval(date1, 10);
+
+        </script>
+
+</body>
+
+</html>

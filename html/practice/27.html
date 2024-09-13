@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        #bo1{
+            position: absolute;
+            display: inline-block;
+            background-color: red;
+            z-index: 1;
+        }
+        
+        #bo2{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            display: inline-block;
+            background-color: green;
+            z-index: 3;
+            
+        }
+        
+        #bo3{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            /* display: -block; */
+            background-color: yellow;
+            z-index: 4;
+        }
+        
+        #bo4{
+            position: absolute;
+            top: 75px;
+            left: 75px;
+            display: inline-block;
+            background-color: cyan;
+            z-index: 5;
+        }
+        /* 
+        #bo5{
+            display: inline-block;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="box" id="bo1"></div>
+    <div class="box" id="bo2"></div>
+    <div class="box" id="bo3"></div>
+    <div class="box" id="bo4"></div>
+    <!-- <div class="box" id="bo5"></div> -->
+</body>
+</html>

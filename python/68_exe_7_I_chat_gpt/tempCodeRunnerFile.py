@@ -1,0 +1,1 @@
+print(f"Renamed: {file_name} -> {new_name}")

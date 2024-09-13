@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+    margin: 10px;
+    border: 2px solid red;
+    padding: 10px;
+    transition: all 1s;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+    cursor: context-menu;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* justify-content: center; */
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    /* border: 2px solid black;                      b */
+    font-size: 20px;
+    margin: 5px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#navbar ul li a {
+    color: aliceblue;
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 90px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background: #fff;
+    border-radius: 90px;
+}
+
+.home {
+    border: 5px solid black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 430px;
+}
+
+.home::before {
+    content: "";
+    margin: 0px;
+    background: url(../img/others/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: -1px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.btn {
+    margin: 5px;
+    padding: 13px;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    font-family: cursive;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background: #fff;
+    color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+.headi {
+    margin: 20px;
+    display: flex;
+}
+
+.boxab1 {
+    height: 300px;
+    border: 2px solid black;
+    width: 200px;
+}
+
+.onej {
+    margin: auto;
+    width: 20%;
+
+}

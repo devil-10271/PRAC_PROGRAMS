@@ -1,0 +1,21 @@
+a=[]
+print(type(type(a))) ------> class is type
+
+
+string=""
+a=[]
+if(type(a) != type(string)): --------> to compare the data type 
+    a=tuple(a)
+    print(type(a))
+
+
+try:
+    i=int(input(f'Enter Number : '))
+except ValueError:
+    print('not is int')
+except NameError:
+    print('helo')
+
+
+uedahilswab
+

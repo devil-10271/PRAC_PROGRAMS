@@ -1,0 +1,103 @@
+/* body basics */
+
+* {
+    color: white;
+    /* border: 1px solid white; */
+}
+
+.basic {
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(../img/red.jpg)no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+/* navigation bar */
+.headcon {
+    margin: 10px;
+    /* border: solid 2px white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    margin: 20px 10px 10px 10px;
+    width: 75px;
+    height: 75px;
+    border-radius: 90px;
+    border: 2px solid red;
+    padding: 10px;
+    transition: all 1.5s ease-out;
+}
+
+#logo:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+.navitems {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    font-size: 20px;
+}
+
+.navit {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 45px;
+}
+
+.navit:hover {
+    color: black;
+    background: #fff;
+}
+
+.search {
+    text-align: center;
+    font-family: cursive;
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    right: 30px;
+    border: none;
+    border-radius: 45px;
+    background-color: black;
+}
+
+
+
+/* body contant */
+
+.bodycon {
+    margin: 10px;
+    border: 2px solid wheat;
+    padding: 10px;
+    width: 1300px;
+    height: 500px;
+}
+
+.bodyitems {
+    border: 2px solid white;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* padding: 10px; */
+}
+#box1,#box2,#box3{
+    margin: 10px;
+    border: 2px solid green;
+    /* height: 380px; */
+    /* width: 400px; */
+}
